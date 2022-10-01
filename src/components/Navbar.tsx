@@ -14,7 +14,11 @@ const Navbar = () => {
     <div className='navbar'>
       <div className='links'>
         <Link to='/'>Home</Link>
-        {!user && <Link to='/login'>Login</Link>}
+        {user ? (
+          <Link to='/createpost'>Create Post</Link>
+        ) : (
+          <Link to='/login'>Login</Link>
+        )}
       </div>
       <div className='user'>
         {user && (

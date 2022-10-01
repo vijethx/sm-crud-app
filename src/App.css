@@ -46,3 +46,10 @@ body {
   font-size: 15px;
   border-radius: 50%;
 }
+/* form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  padding: 2rem;
+  margin: auto;
+} */

@@ -3,6 +3,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Login from "./pages/Login";
 import Main from "./pages/Main";
+import CreatePost from "./pages/CreatePost";
 function App() {
   return (
     <div className='App'>
@@ -11,6 +12,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Main />} />
           <Route path='/login' element={<Login />} />
+          <Route path='/createpost' element={<CreatePost />} />
           <Route path='*' element={<h1>404 | Page Not Found</h1>} />
         </Routes>
       </Router>
